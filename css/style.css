@@ -1,0 +1,31 @@
+body {
+    font-family:Montserrat;
+    background-color: #1D438A;
+    color: #00DBCD;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:Oswald;
+    font-size: 35pt;
+}
+
+header{
+    text-align:center;
+}
+
+#hero, footer{
+    color: #1D438A;
+    border:10px solid #00DBCD;
+    border-style: double;
+    background-color: #9D70F0;
+    text-align:center;
+    padding: 5px;
+}
+
+#hero img{
+    width: 250px;
+}
+
+#bio{
+    text-align: center;
+}
