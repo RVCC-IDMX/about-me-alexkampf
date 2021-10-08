@@ -20,11 +20,11 @@ header{
     text-align:center;
 }
 
+/* Hero*/
 #hero, footer{
     color: #1D438A;
-    border:10px solid #00DBCD;
-    border-style: double;
-    background-color: #9D70F0;
+    border:10px double #00DBCD;
+    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
     text-align:center;
     padding: 5px;
 }
@@ -33,10 +33,12 @@ header{
     width: 250px;
 }
 
+/*Bio*/
 #bio{
     text-align: center;
 }
 
+/*Hobbies*/
 #hobbies{
     margin-left: 475px;
 }
@@ -51,8 +53,32 @@ li:last-child{
     border: none;
 }
 
-li a:hover {
-    font-size: 30px;
-    background: #9D70F0;
-  }
+/*Gallery*/
+#gallery{
+    color: #1D438A;
+    border:10px double #00DBCD;
+    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
+    margin: 10px;
+}
 
+
+
+#gallery img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    width: 50%;
+    max-width:100%;
+    
+}
+
+#gallery figure{/* for some reason, this only affected the text,
+     so I added code I found to center the images  */
+    text-align:center;
+}
+/* not sure why this code isn't working, may revisit
+#gallery figcaption{ 
+    border:5px double #00DBCD;
+    background-color: #9D70F0;
+} */
