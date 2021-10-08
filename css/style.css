@@ -58,15 +58,14 @@ li:last-child{
     color: #1D438A;
     border:10px double #00DBCD;
     background-image:radial-gradient(#9D70F0 65%, #00d1c3);
-    margin: 10px;
+    margin: 2rem;
 }
 
 
 
 #gallery img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     margin-bottom: 5px;
     width: 50%;
     max-width:100%;
@@ -82,3 +81,33 @@ li:last-child{
     border:5px double #00DBCD;
     background-color: #9D70F0;
 } */
+
+/*Literature*/
+#lit{
+    color: #1D438A;
+    border:10px double #00DBCD;
+    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
+    margin: 2rem;
+}
+
+#lit div{
+    padding: 1rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+#lit div p{
+    clear: both;
+}
+
+/*dropcaps*/
+#lit div p:nth-child(1)::first-letter{
+    float:left;
+    font-family:Oswald;
+    font-size:3em;
+    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
+    padding:.15em;
+    margin-right:.1em;
+    line-height:.7;
+    border: 3px double #00DBCD
+}
+
