@@ -1,11 +1,18 @@
+/* * {
+    border:solid 1px black;
+}
+*/
 body {
     font-family:Montserrat;
-    background-color: #1D438A;
+    background-image: linear-gradient(#5CDB95,#1D438A);
     color: #00DBCD;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family:Oswald;
+    text-align:center;
+}
+h1{
     font-size: 35pt;
 }
 
@@ -29,3 +36,23 @@ header{
 #bio{
     text-align: center;
 }
+
+#hobbies{
+    margin-left: 475px;
+}
+
+li{
+    margin: auto 500px auto auto;
+    list-style-type: none;
+    border-bottom: 1px solid #00DBCD;
+}
+
+li:last-child{
+    border: none;
+}
+
+li a:hover {
+    font-size: 30px;
+    background: #9D70F0;
+  }
+
