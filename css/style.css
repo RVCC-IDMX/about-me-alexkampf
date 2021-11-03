@@ -88,6 +88,27 @@ li:last-child{
     background-color: #9D70F0;
 } */
 
+/*Video majority of code from Dani Krossing https://www.youtube.com/watch?v=OOy764mDtiA*/
+#video{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    margin-bottom: 8rem;
+    height: 0px;
+    color: #00DBCD;
+}
+
+#video iframe{
+    position:absolute;
+    margin-top: 5rem;
+    left: 0px;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    height:100%;
+    width: 100%;
+}
+
 /*Literature*/
 #lit{
     color: #1D438A;
