@@ -153,6 +153,11 @@ li:last-child{
     max-width: 800px;
 }
 
+#contactForm legend{
+    padding: .1rem;
+    color: #00DBCD;
+}
+
 #contactForm fieldset{
     border:5px double #00DBCD;
     color: #1D438A;
@@ -166,13 +171,9 @@ li:last-child{
     background-image:radial-gradient(#9D70F0 65%, #00d1c3);
 }
 
-legend{
-    padding: .1rem;
-}
-
 #contact button{
     background-color: #1D438A;
-    color: #00d1c3;
+    color: #00DBCD;
     border: none;
     max-width: 500px;
     width: 50%;
