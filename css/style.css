@@ -138,6 +138,13 @@ li:last-child{
     border: 3px double #00DBCD
 }
 
+/*Contact form*/
+
+#formElements{
+    display: grid;
+    
+}
+
 
 /*tablet size*/
 @media screen and (min-width: 960px){
