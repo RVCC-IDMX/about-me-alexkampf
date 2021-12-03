@@ -4,8 +4,8 @@
 */
 body {
     font-family:Montserrat;
-    background-color: #1D438A;
-    color: #00DBCD;
+    background-color: #2e3047;
+    color: #3bba9c;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
     font-size: 35pt;
+    text-shadow: 2px 2px 5px #3bba9c;
 }
 
 h2{
@@ -21,15 +22,22 @@ h2{
 }
 header{
     text-align:center;
+    
 }
 
 /* Hero*/
 #hero, footer{
-    color: #1D438A;
-    border:10px double #00DBCD;
-    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
+    color: #2e3047;
+    border:10px double #3bba9c;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px #3bba9c;
+    background-color: #6f63ad;
+    /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
     text-align:center;
     padding: 5px;
+}
+footer{
+    border-radius: 15px;
 }
 
 #hero img{
@@ -55,7 +63,8 @@ ul{
 
 li{
     margin: auto;
-    border-bottom: 1px solid #00DBCD;
+    border-bottom: 1px solid #3bba9c;
+    
 }
 
 li:last-child{
@@ -64,9 +73,12 @@ li:last-child{
 
 /*Gallery*/
 #gallery{
-    color: #1D438A;
-    border:10px double #00DBCD;
-    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
+    color: #2e3047;
+    border:10px double #3bba9c;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px #3bba9c;
+    background-color: #6f63ad;
+    /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
     margin: 2rem;
 }
 
@@ -97,7 +109,7 @@ li:last-child{
     padding-top: 25px;
     margin-bottom: 8rem;
     height: 0px;
-    color: #00DBCD;
+    color: #3bba9c;
 }
 
 #video iframe{
@@ -113,9 +125,12 @@ li:last-child{
 
 /*Literature*/
 #lit{
-    color: #1D438A;
-    border:10px double #00DBCD;
-    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
+    color: #2e3047;
+    border:10px double #3bba9c;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px #3bba9c;
+    background-color: #6f63ad;
+    /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
     margin: 2rem;
 }
 
@@ -133,11 +148,15 @@ li:last-child{
     float:left;
     font-family:Oswald;
     font-size:3em;
-    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
+    color: #3bba9c;
+    background-color: #2e3047;
+    /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
     padding:.15em;
     margin-right:.1em;
     line-height:.7;
-    border: 3px double #00DBCD
+    border: 3px double #3bba9c;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #3bba9c;
 }
 
 /*Contact form*/
@@ -155,25 +174,30 @@ li:last-child{
 
 #contactForm legend{
     padding: .1rem;
-    color: #00DBCD;
+    color: #3bba9c;
 }
 
 #contactForm fieldset{
-    border:5px double #00DBCD;
-    color: #1D438A;
+    border:5px double #3bba9c;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #3bba9c;
+    color: #3bba9c;
     margin-top: .5rem;
     margin-bottom: .5rem;
 
 }
 
 #contactForm fieldset:nth-child(1){
-    border:8px double #00DBCD;
-    background-image:radial-gradient(#9D70F0 65%, #00d1c3);
+    border:8px double #3bba9c;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px #3bba9c;
+    background-color: #2e3047;
+    /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
 }
 
 #contact button{
-    background-color: #1D438A;
-    color: #00DBCD;
+    background-color: #2e3047;
+    color: #3bba9c;
     border: none;
     max-width: 500px;
     width: 50%;

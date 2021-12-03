@@ -17,11 +17,14 @@
 
 <body>
     <header>
+        <div class="logo">
+            <!--might have to move  logo outside of nav-->
+            <img src="img/logo-96X96.svg" alt="Blue origami bird logo">
+            <h1> Web Dev 1</h1>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav class="navbar">
-            <div class="logo">
-                <img src="img/logo-96X96.svg" alt="Blue origami bird logo">
-                <h1> Web Dev 1</h1>
-            </div>
+
             <div class="navbar-links">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
@@ -32,6 +35,9 @@
                 </ul>
             </div>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
     <main>
         <section id="hero">
