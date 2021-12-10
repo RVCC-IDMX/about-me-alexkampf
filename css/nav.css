@@ -37,15 +37,16 @@ main{
 }
 
 .logo img{
-    height: 50px;
-    width: 50px;
-    padding-top: 1.75rem;
+    height: 100px;
+    width: 100px;
+    padding-top: .25rem;
+    padding-left: 1rem;
     
 }
 
 .logo h1{
     font-size: 2rem;
-    padding-right: 2.25rem;
+    margin-right: 6.5rem;
    
 }
 
@@ -69,14 +70,10 @@ padding:.25rem;
 }
 
 .navbar-links a:hover{
-    text-shadow: 2px 2px 5px #3bba9c;
+    text-shadow: 2px 2px 5px rgba(59,186,156,0.73);
 }
 /* Hamburger icon */
 .nav-toggle-label {
-    top: 0;
-    right: 0;
-    margin-left: 1em;
-    height: 100%;
     display: flex;
     align-items: center;
   }
@@ -89,8 +86,16 @@ padding:.25rem;
   height: 2px;
   width: 2em;
   border-radius: 2px;
-  box-shadow: 0px 0px 5px #3bba9c;
+  box-shadow: 0px 0px 5px rgba(59,186,156,0.73);
   position: relative;
+}
+.nav-toggle-label div{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    height:25px;
+    width: 35px;
+    padding-top: 1rem;
 }
 
 .nav-toggle-label span::before,
@@ -125,10 +130,12 @@ such that no text wraps
 */
 @media screen and (min-width: 60rem) {
 
-    /* .navbar{
-        flex-direction: row;
-        justify-content: center;
-    } */
+    nav{
+        display:flex !important;
+    }
+    .nav-toggle-label {
+        display:none;
+    }
 
     .navbar ul{
         display: flex;

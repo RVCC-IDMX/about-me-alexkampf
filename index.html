@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link ref="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +20,13 @@
     <header>
         <div class="logo">
             <!--might have to move  logo outside of nav-->
-            <img src="img/logo-96X96.svg" alt="Blue origami bird logo">
+            <img src="img/vector.svg" alt="My logo, containing my initials">
             <h1> Web Dev 1</h1>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <div><span></span></div>
         </div>
+
+        </label>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav class="navbar">
 
@@ -35,9 +40,7 @@
                 </ul>
             </div>
         </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
+
     </header>
     <main>
         <section id="hero">
@@ -112,69 +115,65 @@
         </section>
 
         <article id="lit">
-            <h2> A Passage From At the Mountains of Maddness, by H.P. Lovecraft, 1936</h2>
+            <h2>Blog: CSS Animation</h2>
 
             <div>
-                <p>At bottom of torso, rough but dissimilarly functioning counterparts of head arrangements exist.
-                    Bulbous light-gray pseudo-neck, without gill suggestions, holds greenish five-pointed starfish
-                    arrangement. Tough, muscular arms four feet long and tapering from seven inches diameter at base to
-                    about two and five-tenths at point. To each point is attached small end of a greenish five-veined
-                    membranous triangle eight inches long and six wide at farther end. This is the paddle, fin, or
-                    pseudofoot which has made prints in rocks from a thousand million to fifty or sixty million years
-                    old. From inner angles of starfish-arrangement project two-foot reddish tubes tapering from three
-                    inches diameter at base to one at tip. Orifices at tips. All these parts infinitely tough and
-                    leathery, but extremely flexible. Four-foot arms with paddles undoubtedly used for locomotion of
-                    some sort, marine or otherwise. When moved, display suggestions of exaggerated muscularity. As
-                    found, all these projections tightly folded over pseudoneck and end of torso, corresponding to
-                    projections at other end.</p>
+                <p>CSS animation is a really useful tool to set a website apart from other websites. A lot of animation
+                    on the web nowadays uses JavaScript, because it can handle more complex animations precisely. But, a
+                    lot of really cool animations can be done solely using CSS too!</p>
 
-                <p>Cannot yet assign positively to animal or vegetable kingdom, but odds now favor animal. Probably
-                    represents incredibly advanced evolution of radiata without loss of certain primitive features.
-                    Echinoderm resemblances unmistakable despite local contradictory evidences. Wing structure puzzles
-                    in view of probable marine habitat, but may have use in water navigation. Symmetry is curiously
-                    vegetablelike, suggesting vegetable's essential up-and-down structure rather than animal's
-                    fore-and-aft structure. Fabulously early date of evolution, preceding even simplest Archaean
-                    protozoa hitherto known, baffles all conjecture as to origin.</p>
+                <p>Many developers use CSS animations for more simple animations, like transitions, animated loading
+                    icons, or toggling the state of different UI elements. Things like color changes, element
+                    transformation, element scaling, and element rotation are the simplest animations, and serve as the
+                    building blocks for the more complex ones that CSS is capable of making. </p>
 
-                <p>Complete specimens have such uncanny resemblance to certain creatures of primal myth that suggestion
-                    of ancient existence outside antarctic becomes inevitable. Dyer and Pabodie have read Necronomicon
-                    and seen Clark Ashton Smith's nightmare paintings based on text, and will understand when I speak of
-                    Elder Things supposed to have created all earth life as jest or mistake. Students have always
-                    thought conception formed from morbid imaginative treatment of very ancient tropical radiata. Also
-                    like prehistoric folklore things Wilmarth has spoken of—Cthulhu cult appendages, etc.</p>
+                <p>There are ten properties specifically used for animation in CSS. They are: @keyframes, animation,
+                    animation-delay, animation-direction, animation-duration, animation-fill-mode,
+                    animation-iteration-count, animation-name, animation-play-state, and animation-timing-function. It’s
+                    very possible not to use a lot of these in an animation, but they all have their uses.</p>
 
-                <p>Vast field of study opened. Deposits probably of late Cretaceous or early Eocene period, judging
-                    from associated specimens. Massive stalagmites deposited above them. Hard work hewing out, but
-                    toughness prevented damage. State of preservation miraculous, evidently owing to limestone action.
-                    No more found so far, but will resume search later. Job now to get fourteen huge specimens to camp
-                    without dogs, which bark furiously and can't be trusted near them. With nine men—three left to guard
-                    the dogs—we ought to manage the three sledges fairly well, though wind is bad. Must establish plane
-                    communication with McMurdo Sound and begin shipping material. But I've got to dissect one of these
-                    things before we take any rest. Wish I had a real laboratory here. Dyer better kick himself for
-                    having tried to stop my westward trip. First the world's greatest mountains, and then this. If this
-                    last isn't the high spot of the expedition, I don't know what is. We're made scientifically.
-                    Congrats, Pabodie, on the drill that opened up the cave. Now will Arkham please repeat description?"
-                </p>
+                <p>Probably the most important amongst them is the @keyframes property, as it’s where developers specify
+                    exactly what the animation does. All the other properties are used for affecting the whole
+                    animation, while @keyframes specifies the changes that happen over the course of the animation. For
+                    example, animation-duration changes the entire length of the animation, while in @keyframes the
+                    length of the different states of the animation can be changed. More than likely, a majority of the
+                    code used to make an animation will be in the @keyframes property. The animation you see making the
+                    border of this blog flicker contain almost 40 lines of code in its @keyframes property alone.</p>
 
-                <p>The sensations of Pabodie and myself at receipt of this report were almost beyond description, nor
-                    were our companions much behind us in enthusiasm. McTighe, who had hastily translated a few high
-                    spots as they came from the droning receiving set, wrote out the entire message from his shorthand
-                    version as soon as Lake's operator signed off. All appreciated the epoch-making significance of the
-                    discovery, and I sent Lake congratulations as soon as the Arkham's operator had repeated back the
-                    descriptive parts as requested; and my example was followed by Sherman from his station at the
-                    McMurdo Sound supply cache, as well as by Captain Douglas of the Arkham. Later, as head of the
-                    expedition, I added some remarks to be relayed through the Arkham to the outside world. Of course,
-                    rest was an absurd thought amidst this excitement; and my only wish was to get to Lake's camp as
-                    quickly as I could. It disappointed me when he sent word that a rising mountain gale made early
-                    aerial travel impossible.</p>
+                <p>Probably the most used element of @keyframes is percent. Percent allows you to decide exactly when a
+                    change in style happens, using percentages. The percentage is of the total amount of time allotted
+                    to the animation using the animation-duration property. So, for example, if the duration was set as
+                    two seconds, and then in the @keyframe the style changes fifty percent through, the style would
+                    change one second after the start of the animation. Using percent, developers can shift the style as
+                    many times as they want.</p>
 
-                <p>But within an hour and a half interest again rose to banish disappointment. Lake, sending more
-                    messages, told of the completely successful transportation of the fourteen great specimens to the
-                    camp. It had been a hard pull, for the things were surprisingly heavy; but nine men had accomplished
-                    it very neatly. Now some of the party were hurriedly building a snow corral at a safe distance from
-                    the camp, to which the dogs could be brought for greater convenience in feeding. The specimens were
-                    laid out on the hard snow near the camp, save for one on which Lake was making crude attempts at
-                    dissection.</p>
+                <p>The other animation properties serve to affect the entire animation as a whole. For instance,
+                    animation-delay allows developers to choose to delay the start of the animation, stopping it from
+                    instantly starting upon the opening of the web page. One of the more important properties that
+                    doesn’t actively affect the animation is the animation-name property. It serves as a link between
+                    the other properties and the @keyframe property, allowing the @keyframe to actually affect the
+                    animation. In other words, if the name isn’t set in both the element the animation is being applied
+                    to and the @keyframe, nothing will happen. Another extremely useful property is the animation
+                    property, which serves as a shorthand for using most of the other properties. It’s very handy for
+                    saving space in the code itself, and keeping everything readable.</p>
+
+                <p>With these building blocks, web developers are able to create great websites. For more complex
+                    animations, many use JavaScript. Many developers however make amazing and complex animations, solely
+                    using CSS. Codepen.io is a great place to go for examples of great CSS animations.</p>
+
+                <ul>
+                    <li>Sources:</li>
+
+                    <li><a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">W3Schools article on
+                            CSS
+                            animation</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=PjUCq04ebVA" target="_blank">DevDreamer's youtube video
+                            on
+                            CSS animation</a></li>
+                    </li><a href="https://youtu.be/Nloq6uzF8RQ" target="_blank">Kevin Powell's youtube video on CSS
+                        animation</a></li>
+                </ul>
+
             </div>
 
         </article>

@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
     font-size: 35pt;
-    text-shadow: 2px 2px 5px #3bba9c;
+    text-shadow: 2px 2px 5px rgba(59,186,156,0.73);
 }
 
 h2{
@@ -30,7 +30,7 @@ header{
     color: #2e3047;
     border:10px double #3bba9c;
     border-radius: 25px;
-    box-shadow: 0px 0px 15px #3bba9c;
+    box-shadow: 0px 0px 15px rgba(59,186,156,0.73);
     background-color: #6f63ad;
     /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
     text-align:center;
@@ -76,7 +76,7 @@ li:last-child{
     color: #2e3047;
     border:10px double #3bba9c;
     border-radius: 25px;
-    box-shadow: 0px 0px 15px #3bba9c;
+    box-shadow: 0px 0px 15px rgba(59,186,156,0.73);
     background-color: #6f63ad;
     /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
     margin: 2rem;
@@ -92,15 +92,9 @@ li:last-child{
     
 }
 
-#gallery figure{/* for some reason, this only affected the text,
-     so I added code I found to center the images  */
+#gallery figure{
     text-align:center;
 }
-/* not sure why this code isn't working, may revisit
-#gallery figcaption{ 
-    border:5px double #00DBCD;
-    background-color: #9D70F0;
-} */
 
 /*Video majority of code from Dani Krossing https://www.youtube.com/watch?v=OOy764mDtiA*/
 #video{
@@ -128,10 +122,10 @@ li:last-child{
     color: #2e3047;
     border:10px double #3bba9c;
     border-radius: 25px;
-    box-shadow: 0px 0px 15px #3bba9c;
+    box-shadow: 0px 0px 15px rgba(59,186,156,0.73);
     background-color: #6f63ad;
-    /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
     margin: 2rem;
+    animation: border-flicker 2s linear infinite;
 }
 
 #lit div{
@@ -150,14 +144,72 @@ li:last-child{
     font-size:3em;
     color: #3bba9c;
     background-color: #2e3047;
-    /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
     padding:.15em;
     margin-right:.1em;
     line-height:.7;
     border: 3px double #3bba9c;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px #3bba9c;
+    box-shadow: 0px 0px 5px rgba(59,186,156,0.73);
 }
+
+#lit a{
+    color: #3bba9c;
+}
+
+#lit a:link{
+    text-decoration: none;
+}
+
+#lit a:hover{
+    text-shadow: 2px 2px 5px rgba(59,186,156,0.73);
+}
+
+#lit li{
+    border: none;
+    padding: .25rem;
+    color: #3bba9c;
+}
+
+/* Blog flicker animation, code tweaked from https://codepen.io/KevinOgden/pen/JEwjBB*/
+@keyframes border-flicker {
+    0% {
+      opacity:0.1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+    }
+    2% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+    }
+    4% {
+      opacity:0.1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+    }
+    
+    8% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+    }
+    70% {
+      opacity:0.7;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+    }
+    100% {
+      opacity:1;
+      -webkit-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  -moz-box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+  box-shadow: 0px 0px 78px 4px rgba(59,186,156,0.73);
+    }
+  }
 
 /*Contact form*/
 
@@ -180,7 +232,7 @@ li:last-child{
 #contactForm fieldset{
     border:5px double #3bba9c;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px #3bba9c;
+    box-shadow: 0px 0px 5px rgba(59,186,156,0.73);
     color: #3bba9c;
     margin-top: .5rem;
     margin-bottom: .5rem;
@@ -190,9 +242,9 @@ li:last-child{
 #contactForm fieldset:nth-child(1){
     border:8px double #3bba9c;
     border-radius: 25px;
-    box-shadow: 0px 0px 15px #3bba9c;
+    box-shadow: 0px 0px 15px rgba(59,186,156,0.73);
     background-color: #2e3047;
-    /*background-image:radial-gradient(#9D70F0 65%, #00d1c3);*/
+    
 }
 
 #contact button{
@@ -244,8 +296,6 @@ li:last-child{
     grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* need to center spider-man image here */
-
     hr{
         display: none;
     }
@@ -258,4 +308,3 @@ li:last-child{
         display: block;
     }
 }
-/*IDEAS make borders like neon lights, change base colors, kind of hard to look at especially in the dark*/
